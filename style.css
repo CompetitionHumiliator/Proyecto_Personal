@@ -4,6 +4,38 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+header p {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-around;
+    padding:20px 0 20px 0;
+    background-color: #579AD7;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+nav ul {
+    margin: 7.5px 0 0 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    font-weight: bold;
+}
+
 .rated1 {
     text-align: center;
 }
@@ -16,7 +48,7 @@
     font-size: 13px;
     background-color: aliceblue;
     padding: 5px 0 5px 0;
-    margin: 0 270px 0 270px;
+    margin: 0 40% 0 40%;
 }
 
 .section1 > * {
@@ -26,6 +58,7 @@
 }
 
 main .trusted {
+    justify-content: space-around;
     line-height: 2.5rem;
     font-size: 20px;
     text-align: center;
@@ -45,7 +78,7 @@ main .trusted {
     border-style: none;
     cursor: pointer;
     transition-duration: 500ms;
-    box-shadow: 0 0 20px 1px #579AD7;
+    box-shadow: 0 0 20px #579AD7;
 }
 
 .CTA_L:hover {
@@ -64,16 +97,20 @@ main .trusted {
 
 .happynigga {
     margin-top: 20px;
-    height: 50px;
-    width: 100px;
+    height: 70px;
+    width: 0 auto;
 }
 
 .credibility {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    gap: 30px; 
+}
+
+.credibility1 {
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    border-radius: 10px;
 }
 
 .testimonies > * {
@@ -84,7 +121,7 @@ main .trusted {
 
 .paddingtest {
     border-radius: 8px;
-    margin: 20px 30px 20px 30px;
+    margin: 20px 15% 20px 15%;
     padding: 10px 10px 10px 10px;
     background-color: #F4F4F4;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.384);
@@ -96,6 +133,11 @@ main .trusted {
     align-items: center;
     margin-top: 10px;
 }
+
+.testimony1 p {
+    margin-top: 4px;
+}
+
 
 .testimony1 img {
     height: 40px;
@@ -117,14 +159,14 @@ main .trusted {
 }
 
 .process .p2 {
+    background-color: aliceblue;
     border-radius: 2px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.185);
     font-weight: 500px;
     color: rgb(83, 81, 81);
     font-size: 13px;
-    background-color: aliceblue;
     padding: 5px 0 5px 0;
-    margin: 0 250px 20px 250px;
+    margin: 0 30% 20px 30%;
 }
 
 .process h2 {
@@ -140,5 +182,9 @@ main .trusted {
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    margin: 0 auto;
+    margin:0 auto;
+}
+
+.box {
+    background-color: rgb(226, 212, 212);
 }
