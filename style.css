@@ -185,6 +185,42 @@ main .trusted {
     margin:0 auto;
 }
 
-.box {
-    background-color: rgb(226, 212, 212);
+.step-box {
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(224, 224, 224);
+
+}
+
+.step-box > * {
+    margin: 20px;
+}
+
+.circle {
+    width: 0 auto;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 35px;
+    margin: 10px auto;
+}
+
+.step-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step-number {
+    padding: 15px 15px 15px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 200px;
 }
