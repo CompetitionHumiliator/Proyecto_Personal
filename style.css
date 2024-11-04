@@ -4,7 +4,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+.anouncementbar {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    background-color: #f50000;
+    position: sticky;
+}
 header p {
     font-weight: bold;
     font-size: 25px;
@@ -14,7 +21,7 @@ header p {
     display: flex;
     justify-content: space-around;
     padding:20px 0 20px 0;
-    background-color: #579AD7;
+    background-color: #007ee6;
     color: white;
     margin-bottom: 30px;
 }
@@ -53,7 +60,7 @@ nav ul li:hover {
 
 .section1 > * {
     text-align: center;
-    margin: 25px;
+    margin: 25px 0 25px 0;
 
 }
 
@@ -72,20 +79,20 @@ main .trusted {
     font-weight: bold;
     font-size: 16px;
     color: white;
-    background-color: #579AD7;
+    background-color: #007ee6;
     padding: 10px 40px 10px 40px;
     border-radius: 100px;
     border-style: none;
     cursor: pointer;
     transition-duration: 500ms;
-    box-shadow: 0 0 20px #579AD7;
+    box-shadow: 0 0 20px 0 #007ee6;
 }
 
 .CTA_L:hover {
     transform: scale(0.95);
     transition-duration: 500ms;
     background-color: #CE4382;
-    box-shadow: 0 0 20px 1px #CE4382;
+    box-shadow: 0 0 10px 1px #CE4382;
 }
 
 .button_happy {
@@ -96,8 +103,8 @@ main .trusted {
 }
 
 .happynigga {
-    margin-top: 20px;
-    height: 70px;
+    margin-top: 25px;
+    height: 35px;
     width: 0 auto;
 }
 
@@ -106,6 +113,10 @@ main .trusted {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px; 
+}
+
+.credibility img {
+    margin: 0 5px 0 5px;
 }
 
 .credibility1 {
@@ -150,7 +161,7 @@ main .trusted {
 .process {
     padding: 30px 0 30px 0;
     min-height: 30px;
-    background-color: #F4F7FE;
+    background-color: aliceblue;
     text-align: center;
 }
 
@@ -159,7 +170,7 @@ main .trusted {
 }
 
 .process .p2 {
-    background-color: aliceblue;
+    background-color: edf2fd;
     border-radius: 2px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.185);
     font-weight: 500px;
@@ -186,14 +197,36 @@ main .trusted {
 }
 
 .step-box {
+    justify-content: center;
     width: 200px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 10px 10px rgb(224, 224, 224);
+    padding: 0 50px 0 50px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 10px 10px rgb(224, 224, 224);
+    border: 1px solid rgb(0, 0, 0);
 
 }
+
+.step-box-general {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.step-box-general > * {
+    margin: 0 auto;
+    width: 18%;
+}
+
+.step-box-general img {
+    height: 40px;
+    width: 0 auto;
+    margin-top: 60px;
+}
+
 
 .step-box > * {
     margin: 20px;
@@ -202,15 +235,12 @@ main .trusted {
 .circle {
     width: 0 auto;
     height: 60px;
-    background-color: white;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #333;
     font-size: 35px;
-    margin: 10px auto;
+    margin-top:40px;
 }
 
 .step-title {
@@ -219,9 +249,87 @@ main .trusted {
 }
 
 .step-number {
-    padding: 15px 15px 15px 15px;
-    background-color: black;
-    color: white;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
     border-radius: 200px;
 }
- 
+
+.step-description {
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.anouncementbar {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    background-color: #f50000;
+    position: sticky;
+}
+
+.header1 p {
+    font-size: 20px;
+}
+
+
+.header1 nav ul {
+    font-size: 14px;
+    margin: 4px 0 0 0;
+}
+
+.section1 .p1 {
+    margin: 0 30% 0 30%;
+    }
+
+    .section1 h1 {
+        font-size: 25px;
+        margin: 25px 22px 0 22px;
+    }
+
+    .section1 .p2 {
+    margin: 20px 30px 25px 30px;
+    color: rgb(54, 54, 54);
+    font-weight: 300;
+    }
+
+    .trusted p {
+        font-size: 1px;
+    }
+
+    .CTA_L {
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 0 20px 1px #007ee6;
+    }
+
+    .CTA_L:hover {
+        transform: scale(0.95);
+        transition-duration: 500ms;
+        background-color: #CE4382;
+        box-shadow: 0 0 10px 1px #CE4382;
+    }
+
+    .happynigga {
+    height: 30px;
+    width: 0 auto;
+    }
+
+    main .trusted {
+        font-size: 15px;
+        line-height: 30px;
+        padding: 3px 0 3px 0;
+        border-top: 2px solid rgba(255, 0, 0, 0.212);
+        border-bottom: 2px solid rgba(38, 0, 255, 0.295);
+        margin: 0 auto;
+    }
+
+    .paddingtest {
+        border-radius: 7px;
+        margin: 0 30px 0 30px;
+    }
+
+}
