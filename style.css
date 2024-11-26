@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'poppins', sans-serif;
+    font-weight: 450;
 }
 
 .anouncementbar {
@@ -9,13 +10,14 @@
     font-weight: bold;
     text-align: center;
     padding: 10px 0 10px 0;
-    background-color: #f50000;
+    background-color: black;
     position: sticky;
-    font-style: italic;
+    top: 0;
+    z-index: 999;
 }
 header p {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 23px;
 }
 
 .header1 {
@@ -38,6 +40,7 @@ nav ul {
     display: flex;
     gap: 20px;
     cursor: pointer;
+    letter-spacing: 1.3px;
 }
 
 nav ul li:hover {
@@ -46,9 +49,8 @@ nav ul li:hover {
 
 .rated1 {
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 23px;
-    letter-spacing: 0.4px;
 }
 
 
@@ -68,7 +70,16 @@ nav ul li:hover {
 .section1 > * {
     text-align: center;
     margin: 25px 0 25px 0;
+}
 
+.section1 h1 {
+    font-weight: 600;
+    padding: 0 50px 0 50px;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 main .trusted {
@@ -76,14 +87,18 @@ main .trusted {
     line-height: 2.5rem;
     font-size: 20px;
     text-align: center;
-    border-top: 0.13rem solid rgba(0, 0, 0, 0.116);
-    border-bottom: 0.13rem solid rgba(0, 0, 0, 0.116);
-    margin: 10px 60px 0 60px;
+    border-top: 0.13rem solid rgba(255, 0, 0, 0.5);
+    border-bottom: 0.13rem solid rgba(0, 153, 255, 0.514);
     padding: 20px 0 20px 0;
 }
 
+
+main .mobilebr {
+    display: none;
+}
+
 .CTA_L {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     color: white;
     background-color: #007ee6;
@@ -183,20 +198,13 @@ main .trusted {
     margin-bottom: 25px;
 }
 
-.process .bb2 {
-    background-color: edf2fd;
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.185);
-    font-weight: 500px;
-    color: rgb(83, 81, 81);
-    font-size: 13px;
-    padding: 5px;
-    border-style: none;
-    background-color: aliceblue;
-}
-
 .process h2 {
     font-size: 30px;
+}
+
+.p2 {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.701);
 }
 
 .test1 {
@@ -213,7 +221,7 @@ main .trusted {
 
 .step-box {
     justify-content: center;
-    width: 200px;
+    width: 100px;
     margin: 20px auto;
     padding: 0 50px 0 50px;
     background-color: aliceblue;
@@ -232,7 +240,7 @@ main .trusted {
 
 .step-box-general > * {
     margin: 0 auto;
-    width: 18%;
+    width: 22%;
 }
 
 .step-box-general img {
@@ -263,6 +271,7 @@ main .trusted {
 }
 
 .step-number {
+    width: 50px;
     margin-top: 30px;
     padding: 25px;
     background-color: rgb(252, 252, 252);
@@ -276,26 +285,19 @@ main .trusted {
 }
 
 
-@media only screen and (max-width: 600px) {
-
-.anouncementbar {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding: 15px 0 10px 0;
-    background-color: #f50000;
-    position: sticky;
+.needus .bb1 {
+    margin: 50px 0 40px 0;
 }
 
-.header1 p {
-    font-size: 20px;
-}
+@media only screen and (max-width: 700px) {
+    
+    .anouncementbar {
+        font-size: 15px;
+    }
 
-
-.header1 nav ul {
-    font-size: 14px;
-    margin: 4px 0 0 0;
-}
+    .header1 {
+        overflow: hidden;
+    }
 
 .section1 .p1 {
     margin: 0 30% 0 30%;
@@ -312,15 +314,18 @@ main .trusted {
     font-weight: 300;
     }
 
+    main .mobilebr {
+        display:block;
+    }
+
     .trusted p {
         font-size: 1px;
     }
 
     .rated1 {
         text-align: center;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 17px;
-        letter-spacing: 0.3px;
     }
 
     .CTA_L {
@@ -344,9 +349,6 @@ main .trusted {
         font-size: 15px;
         line-height: 30px;
         padding: 3px 0 3px 0;
-        border-top: 2px solid rgba(255, 0, 0, 0.212);
-        border-bottom: 2px solid rgba(38, 0, 255, 0.295);
-        margin: 0 auto;
     }
 
     .paddingtest {
