@@ -47,6 +47,10 @@ nav ul li:hover {
     font-weight: bold;
 }
 
+input[type=checkbox] {
+    display:none;
+}
+
 .rated1 {
     text-align: center;
     font-weight: 500;
@@ -285,18 +289,31 @@ main .mobilebr {
 }
 
 
+
 .needus .bb1 {
     margin: 50px 0 40px 0;
 }
 
 @media only screen and (max-width: 700px) {
-    
+
     .anouncementbar {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .header1 {
-        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .ulcreds {
+        position: absolute;
+        right: 10px;
+        
     }
 
 .section1 .p1 {
@@ -331,6 +348,8 @@ main .mobilebr {
     .CTA_L {
     padding: 10px 20px 10px 20px;
     box-shadow: 0 0 20px 1px #007ee6;
+    text-align: center;
+    font-size: 18px;
     }
 
     .CTA_L:hover {
