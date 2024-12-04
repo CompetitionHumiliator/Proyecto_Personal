@@ -15,18 +15,30 @@
     top: 0;
     z-index: 999;
 }
+
+
 header p {
+    cursor:pointer;
+    margin: 0;
     font-weight: bold;
     font-size: 23px;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 .header1 {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding:20px 0 20px 0;
     background-color: #007ee6;
     color: white;
     margin-bottom: 30px;
+    position: relative;
 }
 
 header nav ul li a {
@@ -45,10 +57,6 @@ nav ul {
 
 nav ul li:hover {
     font-weight: bold;
-}
-
-input[type=checkbox] {
-    display:none;
 }
 
 .rated1 {
@@ -145,6 +153,14 @@ main .mobilebr {
     margin: 0 5px 0 5px;
     height: 100px;
     width: auto;
+}
+
+.ulcreds {
+    display:flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
 .credibility1 {
@@ -294,7 +310,53 @@ main .mobilebr {
     margin: 50px 0 40px 0;
 }
 
+/* The Nav Menu */
+
+.menu {
+    display: none;
+}
+
+/* Show menu when hamburger is clicked */
+.menu.show {
+    display: block;
+    line-height: 40px;
+    text-align: left;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border-color: none;
+    cursor: pointer;
+    border:none;
+    color: white;
+}
+
+
+
 @media only screen and (max-width: 700px) {
+
+    /*The Nav Menu*/
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 25px;
+        top: 22px;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        left: 55px;
+        top: 18px;
+        color: black;
+    }
+
+    .menu a {
+        color: black;
+    }
 
     .anouncementbar {
         font-size: 13px;
@@ -303,17 +365,13 @@ main .mobilebr {
     .header1 {
         text-align: center;
         justify-content: center;
+        flex-wrap: nowrap;
     }
-
-    .menu {
-        display: none;
-    }
-
 
     .ulcreds {
         position: absolute;
+        top: 26px;
         right: 10px;
-        
     }
 
 .section1 .p1 {

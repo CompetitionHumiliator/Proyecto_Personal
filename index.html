@@ -13,23 +13,26 @@
         <p>🚀 It’s Time To Get Q1 Ready: Start Boosting Your Conversions Today! <span style="text-decoration: underline;">Start Now!</span></p>
     </div>
     <header class="header1">
-        <p>swoozen</p>
+        <p><a href="index.html">swoozen</a></p>
         <nav>
 
-            
+            <!-- Hamburger Button -->
+             <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">☰</button>
+             
+             <!-- Menu Items -->
 
-            <ul>  
-                <li class="menu"><a href="testimonies.html">Testimonies</a></li>
-                <li class="menu"><a href="our-work.html">Our work</a></li>
-                <li class="menu"><a href="about-us.html">About Us</a></li>
+            <ul id="menu-nav" class="menu hidden">  
+                <li><a href="testimonies.html">Testimonies</a></li>
+                <li><a href="our-work.html">Our work</a></li>
+                <li><a href="about-us.html">About Us</a></li>
             </ul>
         </nav>
     </label>
 
-            <nav>
+            <nav class="navcreds">
                 <ul class="ulcreds">
-                    <li class="navcreds"><a href="login.php">Login</a></li>
-                    <li class="navcreds"><a href="register.php"><span style="background-color:rgba(255, 255, 255, 0.89); border-radius: 10px; color: #007ee6; padding: 10px; font-weight:700;">Sign Up</span></a></li>
+                    <li class="licreds"><a href="login.php">Login</a></li>
+                    <li class="licreds"><a href="register.php"><span style="background-color:rgba(255, 255, 255, 0.89); border-radius: 10px; color: #007ee6; padding: 10px; font-weight:700;">Sign Up</span></a></li>
                 </ul>
             </nav>
 
@@ -111,5 +114,23 @@
             </div>
             <div>
     </main>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const hamburgerBtn = document.getElementById("hamburger-btn");
+            const menuNav = document.getElementById("menu-nav");
+
+            hamburgerBtn.addEventListener("click", function () {
+
+                menuNav.classList.toggle("show");
+            
+            }); 
+    });
+
+
+    </script>
+
 </body>
 </html>
