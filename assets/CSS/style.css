@@ -148,7 +148,7 @@ main .mobilebr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; 
+    gap: 30px;
 }
 
 .credibility img {
@@ -206,7 +206,7 @@ main .mobilebr {
     width: 40px;
     border-radius: 100%;
     margin: 0 0 10px 0;
-    
+
 }
 
 .process {
@@ -383,6 +383,161 @@ main .mobilebr {
 
 
 
+/* CTA Section */
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #e9ecef;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+}
+
+.footer-logo p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 1 60%;
+}
+
+.footer-column {
+    flex: 1 1 33%;
+    margin-bottom: 30px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #007ee6;
+}
+
+.footer-contact {
+    flex: 1 1 30%;
+}
+
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007ee6;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    color: #999;
+    font-size: 14px;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-legal a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-legal a:hover {
+    color: #007ee6;
+}
+
 /* Mobile View */
 
 @media only screen and (max-width: 700px) {
@@ -413,7 +568,7 @@ main .mobilebr {
     }
 
     /*  This one is the menu  */
-    
+
     .menu a {
         color: white;
         font-size: 15px;
@@ -440,8 +595,8 @@ main .mobilebr {
         font-size: 13px;
     }
 
-.section1 .p1 {
-    margin: 0 30% 0 30%;
+    .section1 .p1 {
+        margin: 0 30% 0 30%;
     }
 
     .section1 h1 {
@@ -450,14 +605,14 @@ main .mobilebr {
     }
 
     .section1 .bb2 {
-    margin: 20px 30px 25px 30px;
-    color: rgb(54, 54, 54);
-    font-weight: 300;
+        margin: 20px 30px 25px 30px;
+        color: rgb(54, 54, 54);
+        font-weight: 300;
     }
 
     .section1 .p2 {
         font-size: 13px;
-        }
+    }
 
     main .mobilebr {
         display:block;
@@ -474,10 +629,10 @@ main .mobilebr {
     }
 
     .CTA_L {
-    padding: 10px 20px 10px 20px;
-    box-shadow: 0 0 20px 1px #007ee6;
-    text-align: center;
-    font-size: 17px;
+        padding: 10px 20px 10px 20px;
+        box-shadow: 0 0 20px 1px #007ee6;
+        text-align: center;
+        font-size: 17px;
     }
 
     .CTA_L:hover {
@@ -488,8 +643,8 @@ main .mobilebr {
     }
 
     .happynigga {
-    height: 30px;
-    width: 0 auto;
+        height: 30px;
+        width: 0 auto;
     }
 
     main .trusted {
@@ -502,22 +657,55 @@ main .mobilebr {
         border-radius: 7px;
         margin: 0 30px 0 30px;
     }
+
     .step-box-general {
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0 auto;
         gap: 20px;
     }
-    
+
     .step-box-general > * {
         margin: 0 auto;
         width: 50%;
     }
-    
+
     .step-box-general img {
         height: 40px;
         width: 0 auto;
         margin-top: 60px;
     }
-    
+
+    /* Mobile Footer Styles */
+    .footer-container {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-legal {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .cta-section h2 {
+        font-size: 24px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
 }

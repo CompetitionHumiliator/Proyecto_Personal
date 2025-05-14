@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Swoozen</title>
+    <meta name="description" content="Read what our clients say about Swoozen's conversion rate optimization services. Real results from real businesses.">
+    <link rel="stylesheet" href="assets/CSS/style.css"> 
+    <link rel="icon" type="image/x-icon" href="assets/IMAGES/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .testimonials-hero {
+            background-color: #007ee6;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        .testimonials-hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonials-hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin: 0;
+            color: #333;
+        }
+        
+        .author-info p {
+            margin: 5px 0 0;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .testimonial-rating {
+            color: #ffc107;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        
+        .featured-testimonial {
+            grid-column: span 2;
+            background-color: #007ee6;
+            color: white;
+        }
+        
+        .featured-testimonial .testimonial-content {
+            color: white;
+            font-size: 18px;
+        }
+        
+        .featured-testimonial .author-info h4 {
+            color: white;
+        }
+        
+        .featured-testimonial .author-info p {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-testimonial {
+                grid-column: span 1;
+            }
+            
+            .testimonials-hero h1 {
+                font-size: 28px;
+            }
+            
+            .testimonials-hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anouncementbar">
+        <p>🚀 It's Time To Get Q1 Ready: Start Boosting Your Conversions Today! <span style="text-decoration: underline;">Start Now!</span></p>
+    </div>
+    <header class="header1">
+        <p><a href="index.html">swoozen</a></p>
+        <nav>
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">☰</button>
+            
+            <!-- Menu Items -->
+            <ul id="menu-nav" class="menu hidden">  
+                <li><a href="testimonies.html">Testimonies</a></li>
+                <li><a href="our-work.html">Our Work</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navcreds">
+            <ul class="ulcreds">
+                <li class="licreds"><a href="login.php">Login</a></li>
+                <li class="licreds"><a href="register.php"><span style="background-color:rgba(255, 255, 255, 0.89); border-radius: 10px; color: #007ee6; padding: 10px; font-weight:700;">Sign Up</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="testimonials-hero">
+        <h1>What Our Clients Say</h1>
+        <p>Don't just take our word for it. Here's what businesses like yours have achieved with Swoozen's conversion optimization services.</p>
+    </section>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card featured-testimonial">
+            <div class="testimonial-content">
+                "I have finally found an agency that I believe I'll be with for the rest of my career because that good! They're called Swoozen by Youssef Oulmakhzoune, and this guy has made my brand a couple hundred grand in the first 4 months. Their landing page optimization completely transformed our conversion rates, and their A/B testing approach is unlike anything I've seen before."
+            </div>
+            <div class="testimonial-author">
+                <img src="https://i.ibb.co/SdWCZxS/Ac3-Rhd-Glj-L21hbi9z-ZWVk-NDYw-ODMuan-Bl-Zw.jpg" alt="Jenner">
+                <div class="author-info">
+                    <h4>Jenner</h4>
+                    <p>Kylie Cosmetics</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "Our conversion rates were stuck at 1.2% for months. Within just 3 weeks of working with Swoozen, we saw an increase to 3.8%. Their approach to landing page optimization is data-driven and incredibly effective."
+            </div>
+            <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael">
+                <div class="author-info">
+                    <h4>Michael T.</h4>
+                    <p>E-commerce Director, FitGear</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "We were wasting thousands on ads with poor conversion. Swoozen redesigned our landing pages and implemented A/B testing that increased our ROI by 215%. Best investment we've made this year."
+            </div>
+            <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+                <div class="author-info">
+                    <h4>Sarah J.</h4>
+                    <p>Marketing Manager, TechSolutions</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "The team at Swoozen understands conversion psychology better than anyone. They identified issues we never would have spotted and implemented changes that doubled our lead generation overnight."
+            </div>
+            <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David">
+                <div class="author-info">
+                    <h4>David L.</h4>
+                    <p>CEO, GrowthPartners</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "Our cart abandonment rate was killing our business. Swoozen's optimization reduced it from 78% to just 42% in one month. The ROI has been incredible."
+            </div>
+            <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Emma">
+                <div class="author-info">
+                    <h4>Emma R.</h4>
+                    <p>Founder, StyleBoutique</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "Working with Swoozen has been transformative for our SaaS business. Their landing page optimizations increased our trial signups by 67% and reduced our cost per acquisition by 41%."
+            </div>
+            <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="James">
+                <div class="author-info">
+                    <h4>James W.</h4>
+                    <p>Product Director, CloudTools</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+    </div>
+
+    <section id="cta-section" class="cta-section">
+        <h2>Ready to see results like these?</h2>
+        <p>Join hundreds of businesses that have transformed their online presence with Swoozen</p>
+        <div class="button_happy">
+            <button class="CTA_L">Schedule Your Free Consultation Now</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <p><a href="index.html">swoozen</a></p>
+                <p class="footer-tagline">Turning clicks into customers since 2013</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="testimonies.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#landing-pages">Landing Pages</a></li>
+                        <li><a href="services.html#ab-testing">A/B Testing</a></li>
+                        <li><a href="services.html#conversion-optimization">Conversion Optimization</a></li>
+                        <li><a href="services.html#analytics">Analytics & Tracking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="resources.html">Free Resources</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>Email: info@swoozen.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Swoozen. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/SCRIPTS/script.js"></script>
+</body>
+</html>

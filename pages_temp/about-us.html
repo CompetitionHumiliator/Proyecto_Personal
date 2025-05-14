@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Swoozen</title>
+    <meta name="description" content="Learn about Swoozen, the leading conversion rate optimization agency helping brands turn clicks into customers since 2013.">
+    <link rel="stylesheet" href="assets/CSS/style.css"> 
+    <link rel="icon" type="image/x-icon" href="assets/IMAGES/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-hero {
+            background-color: #007ee6;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .about-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .about-hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        
+        .about-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .about-text {
+            flex: 1 1 500px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .about-image {
+            flex: 1 1 400px;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .values-section {
+            background-color: #f8f9fa;
+            padding: 80px 20px;
+        }
+        
+        .values-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-icon {
+            font-size: 40px;
+            color: #007ee6;
+            margin-bottom: 20px;
+        }
+        
+        .value-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .value-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 32px;
+            }
+            
+            .about-section h2 {
+                font-size: 28px;
+            }
+            
+            .about-content {
+                flex-direction: column-reverse;
+            }
+            
+            .value-card {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .about-hero {
+                padding: 50px 15px;
+            }
+            
+            .about-hero h1 {
+                font-size: 28px;
+            }
+            
+            .about-section {
+                padding: 50px 15px;
+            }
+            
+            .values-section {
+                padding: 50px 15px;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anouncementbar">
+        <p>🚀 It's Time To Get Q1 Ready: Start Boosting Your Conversions Today! <span style="text-decoration: underline;">Start Now!</span></p>
+    </div>
+    <header class="header1">
+        <p><a href="index.html">swoozen</a></p>
+        <nav>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">☰</button>
+            <ul id="menu-nav" class="menu hidden">  
+                <li><a href="testimonies.html">Testimonies</a></li>
+                <li><a href="our-work.html">Our Work</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <nav class="navcreds">
+            <ul class="ulcreds">
+                <li class="licreds"><a href="login.php">Login</a></li>
+                <li class="licreds"><a href="register.php"><span style="background-color:rgba(255, 255, 255, 0.89); border-radius: 10px; color: #007ee6; padding: 10px; font-weight:700;">Sign Up</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <h1>About Swoozen</h1>
+        <p>We're on a mission to help brands maximize their online potential through data-driven conversion rate optimization.</p>
+        <button class="CTA_L">Work With Us</button>
+    </section>
+
+    <section class="about-section">
+        <h2>Our Story</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Founded in 2013 by Youssef Oulmakhzoune, Swoozen began with a simple observation: most businesses were spending thousands on driving traffic to their websites, but very few were optimizing those websites to convert that traffic into customers.</p>
+                <p>What started as a one-person consultancy has grown into a team of conversion specialists, designers, and developers united by a passion for helping businesses grow through data-driven optimization.</p>
+                <p>Today, Swoozen is trusted by hundreds of businesses ranging from startups to Fortune 500 companies. Our proven methodology has generated millions in additional revenue for our clients, without them spending an extra dollar on advertising.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Swoozen team working">
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="values-container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data-Driven Decisions</h3>
+                    <p>We believe in letting data guide our strategy. No guesswork, just proven results backed by thorough testing and analysis.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Client Partnership</h3>
+                    <p>We see ourselves as an extension of your team, fully invested in your success and committed to your growth.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Continuous Innovation</h3>
+                    <p>The digital landscape is always evolving, and so are we. We're constantly testing new approaches to stay ahead of the curve.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Results Obsessed</h3>
+                    <p>We're not satisfied until we've delivered measurable improvements to your bottom line. Your success is our success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-section" class="cta-section">
+        <h2>Ready to work with our team?</h2>
+        <p>Let's discuss how we can help you turn more of your visitors into customers</p>
+        <div class="button_happy">
+            <button class="CTA_L">Schedule Your Free Consultation Now</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <p><a href="index.html">swoozen</a></p>
+                <p class="footer-tagline">Turning clicks into customers since 2013</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="testimonies.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#landing-pages">Landing Pages</a></li>
+                        <li><a href="services.html#ab-testing">A/B Testing</a></li>
+                        <li><a href="services.html#conversion-optimization">Conversion Optimization</a></li>
+                        <li><a href="services.html#analytics">Analytics & Tracking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="resources.html">Free Resources</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>Email: info@swoozen.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Swoozen. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/SCRIPTS/script.js"></script>
+</body>
+</html>
